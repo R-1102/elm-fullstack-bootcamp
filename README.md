@@ -26,5 +26,3 @@ A functional registration system with a form for business data. It includes form
 2. Create a feature branch.
 3. Commit your changes and push.
 4. Create a Pull Request.
-نسخ الكود
-
