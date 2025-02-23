@@ -14,7 +14,7 @@ A functional registration system with a form for business data. It includes form
 - Async/Await for API calls.
 - Form validation (email, password, etc.).
 - API integration for company data.
-- 
+  
 ## Technologies:
 - HTML5, CSS (TailwindCSS, Material UI, Animate.css)
 - JavaScript (ES6+, Async/Await)
