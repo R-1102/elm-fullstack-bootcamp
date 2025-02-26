@@ -18,8 +18,6 @@ The system is optimized for performance, scalability, and fault tolerance while 
 
 2- Uses multithreading to automatically update order status.
 
-3- Implements an automated logging system.
-
 ## Technologies Used
 - Java 
 - GitHub
