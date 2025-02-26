@@ -3,6 +3,9 @@ import java.util.concurrent.Executors;
 
 public class OrderManager {
     private ExecutorService executor = Executors.newFixedThreadPool(10);
+    public OrderManager() {
+        System.out.print("Here is order branch");
+    }
 
     public void processOrder(Order order) {
         executor.submit(() -> {
