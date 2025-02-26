@@ -8,12 +8,16 @@ The system is optimized for performance, scalability, and fault tolerance while 
 
 ### Inventory Management System
 1- Tracks product inventory levels.
+
 2- Predicts when restocking is required based on average daily sales.
+
 3- Suggests restocking strategies.
 
 ### Order Processing System
 1- Processes new customer orders.
+
 2- Uses multithreading to automatically update order status.
+
 3- Implements an automated logging system.
 
 ## Technologies Used
