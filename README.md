@@ -1,4 +1,4 @@
-# TechJobPortal (W2D4)
+# TechJobPortal
 
 ## Overview
 The **TechJobPortal** project is an ASP.NET Core MVC web application designed to showcase job listings for tech-related positions.
