@@ -1,0 +1,13 @@
+@model List<AmazonOMS.Models.Order>
+
+    @foreach (var order in Model)
+{
+    <h3>Order ID: @order.OrderID</h3>
+    <ul>
+        @foreach (var detail in order.OrderDetails)
+        {
+            var product = products.FirstOrDefault(p => p.ProductID == detail.ProductID); // Find product by ID
+        <li>@product.Name - Quantity: @detail.Quantity - Subtotal: @detail.SubTotal</li>
+        }
+    </ul>
+}
