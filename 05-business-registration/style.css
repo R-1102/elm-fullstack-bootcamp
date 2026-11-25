@@ -1,0 +1,171 @@
+body, html {
+margin: 0;
+padding: 0;
+background-color: rgba(232, 232, 232, 0.9);
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.lang-en,.contactnum {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+}
+
+.flex .lang-ar:hover, .flex .contactnum:hover {
+    color: #36B98C;
+}
+
+.logo img {
+    width: auto; 
+    height: auto;
+}
+.container-fluid{
+    background-color: rgba(232, 232, 232, 0.9);
+    padding: 15px;
+
+}
+
+.register {
+    width: 90%; 
+    height: 90%; 
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 70px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #36B98C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2b8f6f;
+}
+.Cancel-btn {
+    background-color: #ffffff;
+    color: #d30202;
+    border: 1px solid #d32f2f; 
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.Cancel-btn:hover {
+    background-color: #d30202c0;
+    color: white;
+}
+
+.Fetch-btn{
+    background-color: #ffffff;
+    color: rgb(73, 73, 175);
+    border: 1px solid rgb(73, 73, 175); 
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Fetch-btn:hover {
+    background-color: rgb(73, 73, 175);
+    color: white;
+}
+
+.terms-checkbox {
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.terms-checkbox input {
+    margin-right: 10px;
+}
+
+
+.phone-number i {
+    color: #36B98C;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .register {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
+.address-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .address-grid {
+        grid-template-columns: 1fr;
+    }
+}
