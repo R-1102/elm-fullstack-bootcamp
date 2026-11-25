@@ -1,6 +1,8 @@
 # Elm Full-Stack Development Bootcamp
 
-A chronological collection of exercises and projects from my two-week Full-Stack Development track at Elm Bootcamp (February–March 2025). The original commit history is retained; later cleanup and documentation are separate commits. Collaboration exercises may include contributions from other participants.
+A collection of 13 hands-on projects and coding exercises completed during the Full-Stack Development track at Elm Bootcamp in February–March 2025.
+
+The projects cover front-end and back-end development, object-oriented programming, database integration, and version control. This repository documents my practical learning experience and progression from fundamental web development concepts to building full-stack applications.
 
 ## Exercises
 
