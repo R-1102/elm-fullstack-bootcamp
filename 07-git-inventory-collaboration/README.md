@@ -2,11 +2,12 @@
 
 Text-file inventory collaboration exercise using `inventory.txt`.
 
-- **First commit:** 2025-02-26
-- **Technologies:** Git, GitHub
-- **Context:** Elm Bootcamp — Full-Stack Development track.
+Developed as part of Elm's Full-Stack Development Bootcamp.
 
-## Run or explore
+- **Project Date:** February 26, 2025
+- **Technologies:** Git, GitHub
+
+## Getting Started
 
 Open `inventory.txt`. No application or database.
 

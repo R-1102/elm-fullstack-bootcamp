@@ -2,10 +2,11 @@
 
 Sample in-memory job listings with title/company search, job-type filtering and detail pages. Listings are fictional examples, not live vacancies.
 
-- **First commit:** 2025-02-27
-- **Technologies:** C#, ASP.NET Core MVC, Bootstrap, .NET 9
-- **Context:** Elm Bootcamp — Full-Stack Development track.
+Developed as part of Elm's Full-Stack Development Bootcamp.
 
-## Run or explore
+- **Project Date:** February 27, 2025
+- **Technologies:** C#, ASP.NET Core MVC, Bootstrap, .NET 9
+
+## Getting Started
 
 With a .NET 9 SDK: `dotnet run --project TechJobPortal.csproj`. Open the local URL printed by the CLI.

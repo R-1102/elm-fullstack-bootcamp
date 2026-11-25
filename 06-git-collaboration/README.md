@@ -2,11 +2,12 @@
 
 Collaboration exercise with a placeholder HTML file and original README notes.
 
-- **First commit:** 2025-02-25
-- **Technologies:** Git, GitHub
-- **Context:** Elm Bootcamp — Full-Stack Development track.
+Developed as part of Elm's Full-Stack Development Bootcamp.
 
-## Run or explore
+- **Project Date:** February 25, 2025
+- **Technologies:** Git, GitHub
+
+## Getting Started
 
 No runnable application. See the original Git history.
 

@@ -2,10 +2,11 @@
 
 Amazon-inspired educational exercise with in-memory product and order lists, a sample order-entry form and order history routes. No stock tracking or real Amazon integration.
 
-- **First commit:** 2025-03-01
-- **Technologies:** C#, ASP.NET Core MVC, .NET 9
-- **Context:** Elm Bootcamp — Full-Stack Development track.
+Developed as part of Elm's Full-Stack Development Bootcamp.
 
-## Run or explore
+- **Project Date:** March 1, 2025
+- **Technologies:** C#, ASP.NET Core MVC, .NET 9
+
+## Getting Started
 
 With a .NET 9 SDK: `dotnet run --project AmazonOMS_.csproj`. Browse `/Products` and `/Order/Place` for the examples.

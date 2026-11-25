@@ -2,10 +2,11 @@
 
 Registration form with name, email and password validation, plus a user list fetched from JSONPlaceholder. No backend registration.
 
-- **First commit:** 2025-02-19
-- **Technologies:** HTML, CSS, JavaScript
-- **Context:** Elm Bootcamp — Full-Stack Development track.
+Developed as part of Elm's Full-Stack Development Bootcamp.
 
-## Run or explore
+- **Project Date:** February 19, 2025
+- **Technologies:** HTML, CSS, JavaScript
+
+## Getting Started
 
 Open `index.html` in a browser. Fetching users requires internet access.

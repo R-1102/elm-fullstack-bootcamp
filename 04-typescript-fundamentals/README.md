@@ -2,10 +2,11 @@
 
 Six exercises: string formatting, number validation, interfaces, classes, generics and asynchronous user fetching.
 
-- **First commit:** 2025-02-20
-- **Technologies:** TypeScript, Node.js
-- **Context:** Elm Bootcamp — Full-Stack Development track.
+Developed as part of Elm's Full-Stack Development Bootcamp.
 
-## Run or explore
+- **Project Date:** February 20, 2025
+- **Technologies:** TypeScript, Node.js
+
+## Getting Started
 
 Run `npm ci`, `npx tsc`, then `node index.js` (Node.js 18+; internet for the sample API).

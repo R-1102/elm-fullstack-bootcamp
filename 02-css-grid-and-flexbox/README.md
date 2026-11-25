@@ -2,10 +2,11 @@
 
 Three-column image gallery and a Flexbox row. The original local image was not included in the repository.
 
-- **First commit:** 2025-02-18
-- **Technologies:** HTML, CSS
-- **Context:** Elm Bootcamp — Full-Stack Development track.
+Developed as part of Elm's Full-Stack Development Bootcamp.
 
-## Run or explore
+- **Project Date:** February 18, 2025
+- **Technologies:** HTML, CSS
+
+## Getting Started
 
 Place your original image at `pic.jpg` next to `index.html`, then open `index.html`. No replacement image is supplied.
