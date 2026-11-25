@@ -1,4 +1,7 @@
 @model List<AmazonOMS.Models.Order>
+@{
+    var products = (IEnumerable<AmazonOMS.Models.Product>)ViewBag.Products;
+}
 
     @foreach (var order in Model)
 {
@@ -7,7 +10,7 @@
         @foreach (var detail in order.OrderDetails)
         {
             var product = products.FirstOrDefault(p => p.ProductID == detail.ProductID); // Find product by ID
-        <li>@product.Name - Quantity: @detail.Quantity - Subtotal: @detail.SubTotal</li>
+        <li>@(product?.Name ?? "Unknown product") - Quantity: @detail.Quantity - Subtotal: @detail.SubTotal</li>
         }
     </ul>
 }

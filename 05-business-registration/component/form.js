@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <button type="submit" class="submit-btn">Register</button>
             <button type="button" class="Cancel-btn">Cancel</button>
-            <button id="fetch-data" class="Fetch-btn">Fetch Company Data</button>
+            <button type="button" id="fetch-data" class="Fetch-btn">Fetch Company Data</button>
 
         </form>
     `;

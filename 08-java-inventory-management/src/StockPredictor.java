@@ -1,5 +1,9 @@
 public class StockPredictor {
     public static void predictStockDepletion(Product product, int dailySales) {
+        if (dailySales <= 0) {
+            System.out.println("Daily sales must be greater than zero.");
+            return;
+        }
         int daysUntilOutOfStock = product.getStockLevel() / dailySales;
         String restockSuggestion = (daysUntilOutOfStock <= 5) ? "Moderate: Consider restocking soon." : "No immediate need to restock.";
 

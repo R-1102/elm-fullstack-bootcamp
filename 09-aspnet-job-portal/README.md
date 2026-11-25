@@ -1,27 +1,11 @@
-# TechJobPortal
+# ASP.NET Job Portal
 
-## Overview
-The **TechJobPortal** project is an ASP.NET Core MVC web application designed to showcase job listings for tech-related positions.
-The application allows users to view job listings, search, and filter based on job types. 
+Sample in-memory job listings with title/company search, job-type filtering and detail pages. Listings are fictional examples, not live vacancies.
 
+- **First commit:** 2025-02-27
+- **Technologies:** C#, ASP.NET Core MVC, Bootstrap, .NET 9
+- **Context:** Elm Bootcamp — Full-Stack Development track.
 
-## Features
-- **Job Listings**: Displays a list of tech job postings with details including the job title, company name, location, and posted date.
-- **Job Search**: Allows users to search for jobs by title or company name.
-- **Job Filtering**: Filter job listings by job type (e.g., Full-time, Part-time, Remote, Contract).
-- **Job Details**: Clicking on a job title takes the user to a page displaying the full job details.
+## Run or explore
 
-
-## Technologies Used
-- **ASP.NET Core MVC**
-- **Bootstrap**
-- **C#**
-- **HTML/CSS**
-
-
-  ## How to Contribute
-1. Fork the repository.
-2. Clone the Repository
-3. Create a feature branch.
-4. Commit your changes and push.
-5. Create a Pull Request.
+With a .NET 9 SDK: `dotnet run --project TechJobPortal.csproj`. Open the local URL printed by the CLI.

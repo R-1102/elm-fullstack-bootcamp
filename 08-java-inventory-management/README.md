@@ -1,30 +1,11 @@
-# Inventory Management System
+# Java Inventory Management
 
-## Overview 
-This project is an Inventory Management System designed for Microsoft-scale applications. It tracks product stock levels, automates order fulfillment.
-The system is optimized for performance, scalability, and fault tolerance while leveraging Object-Oriented Design, Data Structures, Exception Handling, Multithreading, and GitHub Collaboration.
+Console demo of product stock, simple stock-depletion estimates and order-processing classes. The order manager is present but not invoked by Main.
 
-## Features
+- **First commit:** 2025-02-26
+- **Technologies:** Java
+- **Context:** Elm Bootcamp — Full-Stack Development track.
 
-### Inventory Management System
-1- Tracks product inventory levels.
+## Run or explore
 
-2- Predicts when restocking is required based on average daily sales.
-
-3- Suggests restocking strategies.
-
-### Order Processing System
-1- Processes new customer orders.
-
-2- Uses multithreading to automatically update order status.
-
-## Technologies Used
-- Java 
-- GitHub
-
-  ## How to Contribute
-1. Fork the repository.
-2. Clone the Repository
-3. Create a feature branch.
-4. Commit your changes and push.
-5. Create a Pull Request.
+With a JDK: `javac -d out src/*.java` then `java -cp out Main`. Enter average daily sales for the two products.

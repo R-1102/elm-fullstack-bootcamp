@@ -1,6 +1,11 @@
 @model AmazonOMS.Models.Order
+@{
+    var products = (IEnumerable<AmazonOMS.Models.Product>)ViewBag.Products;
+    var selectedProduct = ViewBag.Product as AmazonOMS.Models.Product;
+}
 
-<form method="post">
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="All"></div>
     <div class="form-group">
         <label for="OrderDate">Order Date</label>
         <input type="date" class="form-control" id="OrderDate" name="OrderDate" value="@Model.OrderDate.ToString("yyyy-MM-dd")" />
@@ -13,20 +18,19 @@
 
     <h3>Order Details</h3>
 
-    <form asp-action="Create" method="post">
         <div>
             <label>Product:</label>
             <select name="productID">
                 @foreach (var product in products)
             {
-                <option value="@product.ProductID">@product.Name</option>
+                <option value="@product.ProductID" selected="@(selectedProduct?.ProductID == product.ProductID)">@product.Name</option>
             }
             </select>
         </div>
 
         <div>
             <label>Quantity:</label>
-            <input type="number" name="quantity" />
+            <input type="number" name="quantity" min="1" required />
         </div>
 
         <button type="submit">Place Order</button>

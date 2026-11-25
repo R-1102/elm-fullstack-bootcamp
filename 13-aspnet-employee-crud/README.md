@@ -1,31 +1,11 @@
-# Employee CRUD Application
+# ASP.NET Employee CRUD
 
-This is a simple CRUD application built using ASP.NET Core MVC with MySQL.
+Create, list, edit and delete employees with data annotations and EF Core SQL Server migrations.
 
-## Setup Instructions
+- **First commit:** 2025-03-02
+- **Technologies:** C#, ASP.NET Core MVC, EF Core, SQL Server, .NET 9
+- **Context:** Elm Bootcamp — Full-Stack Development track.
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/username/repository-name.git
-    ```
-2. Open the project in Visual Studio or any other IDE.
-3. Install the required dependencies:
-    ```bash
-    dotnet restore
-    ```
-4. Update the connection string in `appsettings.json` to point to your MySQL database.
-5. Run the migration to set up the database:
-    ```bash
-    dotnet ef database update
-    ```
-6. Run the application:
-    ```bash
-    dotnet run
-    ```
+## Run or explore
 
-## CRUD Operations
-
-- **Create**: Add new employees.
-- **Read**: View a list of employees.
-- **Update**: Edit employee details.
-- **Delete**: Remove an employee from the system.
+Requires a .NET 9 SDK, a reachable SQL Server and the matching EF CLI (9.0.x). Set `ConnectionStrings__DefaultConnection` in your environment to your own SQL Server connection string. Then run `dotnet restore`, `dotnet ef database update` and `dotnet run --project W3D1.csproj` from this folder. Never commit a real connection string.

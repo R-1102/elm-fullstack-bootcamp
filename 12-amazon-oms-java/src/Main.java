@@ -18,7 +18,6 @@ public class Main {
 
         // Orders Storage
         List<Order> orders = new ArrayList<>();
-        HashMap<Integer, Order> userOrderHistory = new HashMap<>();
 
         // CLI
         Scanner scanner = new Scanner(System.in);
@@ -55,16 +54,20 @@ public class Main {
                         break;
                     }
 
+                    if (quantity <= 0) {
+                        System.out.println("Quantity must be greater than zero!");
+                        break;
+                    }
+
                     Product selectedProduct = products.get(productID - 1);
 
                     // Place the order and reduce stock
                     try {
                         Order order = new Order(userID, orders.size() + 1);
                         selectedProduct.reduceStock(quantity);
-                        order.addOrderDetail(new OrderDetails(order.orderID, userID, productID, quantity, selectedProduct.price * quantity));
+                        order.addOrderDetail(new OrderDetails(order.orderID, order.orderID, productID, quantity, selectedProduct.price * quantity));
 
                         orders.add(order);
-                        userOrderHistory.put(userID, order);
 
                         System.out.println("Order placed: " + order);
                     } catch (OutOfStockException e) {
@@ -77,9 +80,13 @@ public class Main {
                     System.out.print("Enter your user ID to view order history: ");
                     int userHistoryID = scanner.nextInt();
 
-                    if (userOrderHistory.containsKey(userHistoryID)) {
+                    List<Order> userOrders = new ArrayList<>();
+                    for (Order order : orders) {
+                        if (order.userID == userHistoryID) userOrders.add(order);
+                    }
+                    if (!userOrders.isEmpty()) {
                         System.out.println("\nOrder History for User ID " + userHistoryID + ":");
-                        System.out.println(userOrderHistory.get(userHistoryID));
+                        for (Order order : userOrders) System.out.println(order);
                     } else {
                         System.out.println("No orders found for User ID " + userHistoryID);
                     }

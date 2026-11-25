@@ -1,28 +1,11 @@
-# Registration System Project
+# Business Registration
 
-## Overview
+Business registration form with company, personal and address fields, client-side validation and sample data from JSONPlaceholder. No real registration backend; the language switch and Cancel control are not implemented.
 
-A functional registration system with a form for business data. It includes form validation, smooth animations, and external API integration for company data retrieval.
+- **First commit:** 2025-02-23
+- **Technologies:** HTML, CSS, JavaScript, Bootstrap, Tailwind CSS
+- **Context:** Elm Bootcamp — Full-Stack Development track.
 
-## Setup Instructions:
-- Ensure that you have a web browser installed on your machine.
-- Open the file directly in a browser (index.html file).
+## Run or explore
 
-## Features:
-- Responsive, semantic HTML5 form.
-- TailwindCSS & Material UI for styling.
-- Async/Await for API calls.
-- Form validation (email, password, etc.).
-- API integration for company data.
-  
-## Technologies:
-- HTML5, CSS (TailwindCSS, Material UI, Animate.css)
-- JavaScript (ES6+, Async/Await)
-- TypeScript
-- GitHub for version control
-
-## How to Contribute
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes and push.
-4. Create a Pull Request.
+Open `index.html` in a browser. Internet access is needed for CDN styling and sample data.

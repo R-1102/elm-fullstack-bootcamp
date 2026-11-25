@@ -35,7 +35,7 @@ function createUser(user: User): string {
     return `User ${user.name} created successfully`;
   }
 
-const user1: User = {id: 1,name: "Renad Alhazmi",email: "Renade@gmail.com",};
+const user1: User = {id: 1,name: "Renad Alhazmi",email: "user@example.com",};
 console.log(createUser(user1)); 
 
 
@@ -63,7 +63,7 @@ class Product {
   }
 
 const product = new Product("Laptop", 1500, "Electronics");
-console.log(`Original Price: $${product.getDiscountedPrice(20)}`); 
+console.log(`Discounted Price: $${product.getDiscountedPrice(20)}`); 
 
 
 

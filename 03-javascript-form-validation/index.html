@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .error { color: red; font-size: 14px; }
+        input { display: block; margin-bottom: 10px; padding: 8px; }
+        .Users { font-size: 14px; }
+    </style>
+  </head>
+  <body>
+
+    <h2>Register</h2>
+    <form id="myForm"> 
+        <input type="text" id="name" placeholder="Full Name">
+        <span id="nameError" class="error"></span>
+
+        <input type="email" id="email" placeholder="Email">
+        <span id="emailError" class="error"></span>
+
+        <input type="password" id="password" placeholder="Password">
+        <span id="passwordError" class="error"></span>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <h2>Fetch Users</h2>
+    <button id="fetchUsersBtn">Fetch Data</button>
+    <ul id="userList"></ul>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit",function(event){
+            
+            event.preventDefault(); 
+
+            document.querySelectorAll(".error").forEach(error => error.innerText = "");
+            let isValid = true;
+            let name = document.getElementById("name").value.trim(); 
+            let email = document.getElementById("email").value.trim(); 
+            let password = document.getElementById("password").value.trim();
+
+
+            //validate Name
+            if(name===""){
+              document.getElementById("nameError").innerText= "Name is Required";
+              isValid= false;
+            }
+
+            // Validate Email
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === "") {
+                document.getElementById("emailError").innerText = "Email is required";
+                isValid = false;
+            } else if (!emailPattern.test(email)) {
+                document.getElementById("emailError").innerText = "Invalid email format";
+                isValid = false;
+            }
+
+            // Validate Password
+            let passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            if (password === "") {
+                document.getElementById("passwordError").innerText = "Password is required";
+                isValid = false;
+            } else if (!passwordPattern.test(password)) {
+                document.getElementById("passwordError").innerText = "Password must be at least 8 characters, with letters & numbers";
+                isValid = false;
+            }
+            
+
+            if (isValid) {
+                alert("Form submitted successfully!");
+                this.submit(); 
+            }
+            });
+
+        const fetchdata = () => {
+                return new Promise((resolve) => {
+                    setTimeout(() => resolve("Data received"), 2000);
+                });
+            };
+
+
+        const getUsers = async () => {
+          
+            console.log(await fetchdata()); 
+            let response = await fetch("https://jsonplaceholder.typicode.com/users");
+            let users = await response.json();
+            console.log(users);
+
+            document.getElementById("userList").innerHTML = users.map(({ name, email }) => `<li>${name} - ${email}</li>`).join("");
+
+        };
+
+        document.getElementById("fetchUsersBtn").addEventListener("click", getUsers);
+
+
+        </script>
+    </body>
+</html>

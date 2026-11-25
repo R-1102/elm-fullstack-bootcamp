@@ -54,7 +54,7 @@ console.log(isValidNumber("30"));
 function createUser(user) {
     return "User ".concat(user.name, " created successfully");
 }
-var user1 = { id: 1, name: "Renad Alhazmi", email: "Renade@gmail.com", };
+var user1 = { id: 1, name: "Renad Alhazmi", email: "user@example.com", };
 console.log(createUser(user1));
 //Section 3: Classes & OOP
 //Task 4: Implement a Product Class
@@ -74,7 +74,7 @@ var Product = /** @class */ (function () {
     return Product;
 }());
 var product = new Product("Laptop", 1500, "Electronics");
-console.log("Original Price: $".concat(product.getDiscountedPrice(20)));
+console.log("Discounted Price: $".concat(product.getDiscountedPrice(20)));
 //Section 4: Generics & Utility Types
 //Task 5: Implement a Generic Function
 function filterArray(arr, predicate) {

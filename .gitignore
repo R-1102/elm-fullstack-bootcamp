@@ -1,0 +1,15 @@
+# Build outputs and dependencies
+node_modules/
+bin/
+obj/
+out/
+target/
+.vs/
+.idea/
+.angular/
+*.csproj.user
+*.suo
+.DS_Store
+.env
+.env.*
+!.env.example

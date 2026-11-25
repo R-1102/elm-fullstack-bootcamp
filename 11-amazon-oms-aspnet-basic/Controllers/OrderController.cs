@@ -14,9 +14,17 @@ namespace AmazonOMS_.Controllers
             return View(userOrders);
         }
 
+        [HttpGet("/Order/Place")]
+        public IActionResult PlaceOrder()
+        {
+            return View();
+        }
+
         [HttpPost("/Order/Place")]
         public IActionResult PlaceOrder(int userId, int productId, int quantity)
         {
+            if (quantity <= 0) return BadRequest("Quantity must be greater than zero.");
+
             var newOrder = new Order
             {
                 Id = orders.Count + 1,
