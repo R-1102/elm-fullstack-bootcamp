@@ -1,0 +1,8 @@
+@model JobListing
+
+<h2>@Model.Title</h2>
+<p><strong>Company:</strong> @Model.CompanyName</p>
+<p><strong>Location:</strong> @Model.Location</p>
+<p><strong>Type:</strong> @Model.JobType</p>
+<p><strong>Posted on:</strong> @Model.PostedDate.ToString("MMM dd, yyyy")</p>
+<a href="@Url.Action("Index", "Job")" class="btn btn-primary">Back to Listings</a>
