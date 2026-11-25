@@ -1,12 +1,21 @@
-# Business Registration
+# Business Registration System
 
-Business registration form with company, personal and address fields, client-side validation and sample data from JSONPlaceholder. No real registration backend; the language switch and Cancel control are not implemented.
+A web-based business registration form featuring responsive design, client-side validation, animations, and API integration for retrieving sample company data.
 
 Developed as part of Elm's Full-Stack Development Bootcamp.
 
 - **Project Date:** February 23, 2025
-- **Technologies:** HTML, CSS, JavaScript, Bootstrap, Tailwind CSS
+- **Technologies:** HTML5, CSS3, JavaScript (ES6+), Bootstrap, Tailwind CSS, Material Icons, Animate.css
 
-## Getting Started
+## Features
 
-Open `index.html` in a browser. Internet access is needed for CDN styling and sample data.
+- Company, personal, and address information forms.
+- Responsive design and CSS animations.
+- Email and password validation.
+- Asynchronous API requests using Async/Await.
+- Automatic form population using JSONPlaceholder API.
+- Dynamic DOM manipulation and error handling.
+
+## Note
+
+This is an educational front-end project without backend registration or database integration. The language switch and Cancel button are not implemented.
